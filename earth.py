@@ -24,4 +24,7 @@ v = np.empty(shape=(t.shape[0],2))
 r[0], v[0] = r_0, v_0
 
 
+# acceleration function
+def accn(r):
+    return -G*M_sun/(np.linalg.norm(r)**3)*r
 
